@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    overflow: hidden;
+    background: #00ff97;
+}
+#text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4em;
+    color: #fff;
+    font-weight: bold;
+    animation: aa 20s infinite linear;
+}
+@keyframes aa
+{
+    0%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #f40395;
+    z-index: 100;
+    mix-blend-mode: difference;
+}

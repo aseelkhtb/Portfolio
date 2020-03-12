@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 10, 2017, 1:23:56 PM
+    Author     : Free
+*/
+
+
+.bg{
+    position: relative;
+    height: 500px;
+    
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100% 140%;
+    background-image: url("gg.gif");
+}
+
+
+.txt{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-size: 300px 300px;
+    border-radius: 4px;
+    margin: 4px;
+    position: relative;
+    left: 30%;
+    top: 20%;
+}
+
+.txt > h2{
+    margin: 0;
+    position: absolute;
+    background-color: rgba(255,255,255,.8);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 4px;
+    padding: 8px;
+    overflow: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.txt:hover > h2{
+    opacity: 1;
+}

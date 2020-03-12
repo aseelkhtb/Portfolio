@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="sss.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <script>
+             i=0;
+            function btnR(){
+                i++;
+                if(i===10)
+                    i=0;
+                setTimeout(info,0);
+            }
+            function btnL(){
+                i--;
+                if(i===-1)
+                    i=10;
+                setTimeout(info,0);
+            }
+            function info()
+            {
+                switch (i) {
+                    case 0:
+                        document.getElementById("f").style.backgroundImage = "url('p.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('p.jpg')";
+                        break;
+                    case 1:
+                        document.getElementById("f").style.backgroundImage = "url('p1.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('p1.jpg')";
+                        break;
+                    case 2:
+                        document.getElementById("f").style.backgroundImage = "url('p2.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('p2.jpg')";
+                        break;
+                    case 3:
+                        document.getElementById("f").style.backgroundImage = "url('p3.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('p3.jpg')";
+                        break;
+                    case 4:
+                        document.getElementById("f").style.backgroundImage = "url('p4.png')";
+                        document.getElementById("b").style.backgroundImage = "url('p4.png')";
+                        break;
+                    case 5:
+                        document.getElementById("f").style.backgroundImage = "url('p5.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('p5.jpg')";
+                        break;
+                    case 6:
+                        document.getElementById("f").style.backgroundImage = "url('p6.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('p6.jpg')";
+                        break;
+                    case 7:
+                        document.getElementById("f").style.backgroundImage = "url('p7.png')";
+                        document.getElementById("b").style.backgroundImage = "url('p7.png')";
+                        break;
+                    case 8:
+                        document.getElementById("f").style.backgroundImage = "url('p8.png')";
+                        document.getElementById("b").style.backgroundImage = "url('p8.png')";
+                    break;
+                    case 9:
+                        document.getElementById("f").style.backgroundImage = "url('p9.png')";
+                        document.getElementById("b").style.backgroundImage = "url('p9.png')";
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">الصفحة الرئيسية</a>
+                <a href="Arabic.html" onclick="" id="purple">اللغة العربية</a>
+                <a href="science.html" onclick="" id="pink">العلوم</a>
+                <a href="Islam.html" onclick="" id="blue">الئقافة الاسلامية</a>
+                <a href="Converterar.html" onclick="converter()" id="orange">تحويل الوحدات</a>
+                <a href="aboutar.html" onclick="about()" id="green">عن الموقع</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">حقوق الملكية</a>
+            </nav>
+        </div>
+        <div id="bg1" class="bg">
+            <button class="btn" id="btn1" onclick="btnL()">&#10094;</button>
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                    <div id="f" style="background-image: url('p.jpg')" class="front"></div>
+                    <div id="b" style="background-image: url('p.jpg')" class="back"></div>
+                </div>
+            </label>
+            <button class="btn"  id="btn2" onclick="btnR()">&#10095;</button>
+            </div>
+    </body>
+</html>

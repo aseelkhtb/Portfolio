@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="Animals.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+             i=0;
+            function btnR(){
+                i++;
+                if(i===7)
+                    i=0;
+                setTimeout(info,0);
+            }
+            function btnL(){
+                i--;
+                if(i===-1)
+                    i=6;
+                setTimeout(info,0);
+            }
+            function info()
+            {
+                switch (i) {
+                    
+                    case 0:
+                        document.getElementById("f").style.backgroundImage = "url('plant1.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant1.jpg')";
+                        document.getElementById("b").innerHTML = "Apple" ;
+                        document.getElementById("inf").innerHTML = "Apples grow on trees. Each spring apple trees bloom or ‘set on blossoms’. Blossoms are flowers. Tucked inside the bottom of each blossom is the ovule. Inside the ovule are the seeds that will turn into an apple.";
+                        break;
+                    case 1:
+                        document.getElementById("f").style.backgroundImage = "url('plant2.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant2.jpg')";
+                        document.getElementById("b").innerHTML = "Banana" ;
+                        document.getElementById("inf").innerHTML = "An instant energy booster, banana is one fruit that is commonly available across the globe. In India, it is given much importance where various regional cuisines use it in making sinful desserts - kheer, malpua, halwa, payasam, sheera, and paniyaram, to name a few. ";
+                        break;
+                    case 2:
+                        document.getElementById("f").style.backgroundImage = "url('plant3.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant3.jpg')";
+                        document.getElementById("b").innerHTML = "Orange" ;
+                        document.getElementById("inf").innerHTML = "Orange is a tropical to semitropical, evergreen, small flowering tree, growing to about 5 to 8 m tall, and bears seasonal fruits that measure about 3 inches in diameter and weigh about 100-150 g. Oranges classified into two general categories, sweet and bitter, with the former being the type most commonly consumed type.";
+                        break;
+                    case 3:
+                        document.getElementById("f").style.backgroundImage = "url('plant4.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant4.jpg')";
+                        document.getElementById("b").innerHTML = "Mango" ;
+                        document.getElementById("inf").innerHTML = "Mango is also called as a super fruit. Mangoes are rich in dietary fibre, vitamins, minerals and pigments. Unique Phytochemicals in mango are Mangiferin, lupeol, euxanthin etc. Mango peel contains Urushiol, a chemical that causes skin allergy in susceptible people.";
+                        break;
+                    case 4:
+                        document.getElementById("f").style.backgroundImage = "url('plant5.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant5.jpg')";
+                        document.getElementById("b").innerHTML = "Peache" ;
+                        document.getElementById("inf").innerHTML = "Peaches are also called stone fruits because they have a shell of hard wood around their seed, called a stone or a pit. The skin of a peach is an orange or yellow color, and it is covered in small hairs called a peach fuzz.";
+                        break;
+                    case 5:
+                        document.getElementById("f").style.backgroundImage = "url('plant6.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant6.jpg')";
+                        document.getElementById("b").innerHTML = "Apricot" ;
+                        document.getElementById("inf").innerHTML = "The fruit has only one seed; the color runs from yellow to orange and may have a red cast; the surface of the fruit is smooth and nearly hairless.";
+                        break;
+                    case 6:
+                        document.getElementById("f").style.backgroundImage = "url('plant7.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant7.jpg')";
+                        document.getElementById("b").innerHTML = "Strawberries" ;
+                        document.getElementById("inf").innerHTML = "Strawberries are a popular part of spring and summer diets throughout America. Mouths water from coast to coast each spring, when small white blossoms start to appear on strawberry bushes.";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">Home</a>
+                <a href="eng.html" onclick="" id="purple">English</a>
+                <a href="scienceen.html" onclick="" id="pink">Science</a>
+                <a href="Islamen.html" onclick="" id="blue">Islam</a>
+                <a href="Converteren.html" onclick="converter()" id="orange">Converter</a>
+                <a href="abouten.html" onclick="about()" id="green">About</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">Copy Right</a>
+            </nav>
+        </div>
+        <div id="bg1" class="bg">
+            <button class="btn" id="btn1" onclick="btnL()">&#10094;</button>
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                    <div id="f" style="background-image: url('plant1.jpg')" class="front"></div>
+                    <div id="b" style="background-image: url('plant1.jpg')" class="back">Apple</div>
+                </div>
+            </label>
+            <div id="inf">Apples grow on trees. Each spring apple trees bloom or ‘set on blossoms’. Blossoms are flowers. Tucked inside the bottom of each blossom is the ovule. Inside the ovule are the seeds that will turn into an apple.</div>
+            <button class="btn"  id="btn2" onclick="btnR()">&#10095;</button>
+            </div>
+    </body>
+</html>

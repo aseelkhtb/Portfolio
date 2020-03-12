@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="indexstyle.css" />
+        <title>Text Animation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ul class="text-animation hidden">
+            <li>K</li>
+            <li>I</li>
+            <li>D</li>
+            <li>S</li>
+            <li>W</li>
+            <li>E</li>
+            <li>B</li>
+        </ul>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+           $(function(){
+               setTimeout(function(){
+                   $('.text-animation').removeClass('hidden');
+               },500);
+           })();
+        </script>
+        
+        <script>
+            $(function(){
+                setTimeout(function(){
+                    $(window.open("Main.html","_self"))
+                },5000)
+            })
+            </script>
+    </body>
+</html>

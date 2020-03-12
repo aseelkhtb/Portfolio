@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="Animals.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+             i=0;
+            function btnR(){
+                i++;
+                if(i===7)
+                    i=0;
+                setTimeout(info,0);
+            }
+            function btnL(){
+                i--;
+                if(i===-1)
+                    i=6;
+                setTimeout(info,0);
+            }
+            function info()
+            {
+                switch (i) {
+                    
+                    case 0:
+                        document.getElementById("f").style.backgroundImage = "url('animal1.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal1.jpg')";
+                        document.getElementById("b").innerHTML = "Lion" ;
+                        document.getElementById("inf").innerHTML = "Living in the grasslands, scrub, and open woodlands of sub-Saharan Africa, the lion is the second largest cat in the world. It is dwarfed slightly by the tiger, which is closely related and has a very similar body type." ;
+                        break;
+                    case 1:
+                        document.getElementById("f").style.backgroundImage = "url('animal2.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal2.jpg')";
+                        document.getElementById("b").innerHTML = "Elephant" ;
+                        document.getElementById("inf").innerHTML = "Habitat loss is one of the key threats facing elephants. Many climate change projections indicate that key portions of elephants’ habitat will become significantly hotter and drier, resulting in poorer foraging conditions and threatening calf survival.";
+                        break;
+                    case 2:
+                        document.getElementById("f").style.backgroundImage = "url('animal3.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal3.jpg')";
+                        document.getElementById("b").innerHTML = "Giraffe" ;
+                        document.getElementById("inf").innerHTML = "At an average height of around 5 m (16-18 ft.), the giraffe is the tallest land animal in the world. Characterized by its long legs, long neck, and distinctive spotted pattern, many people first believed the giraffe was a cross between a leopard and a camel, which is reflected in its scientific name, Giraffa camelopardalis.";
+                        break;
+                    case 3:
+                        document.getElementById("f").style.backgroundImage = "url('animal4.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal4.jpg')";
+                        document.getElementById("b").innerHTML = "Deer" ;
+                        document.getElementById("inf").innerHTML = "Deer are fascinating and very smart animals! Male deer often fight with their antlers in order to impress female deer. Flirt, much? Baby deer (also known as fawns) stay with their moms for up to two years before venturing out on their own.";
+                        break;
+                    case 4:
+                        document.getElementById("f").style.backgroundImage = "url('animal5.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal5.jpg')";
+                        document.getElementById("b").innerHTML = "Monkey" ;
+                        document.getElementById("inf").innerHTML = "Monkeys are a type of animal called a primate. A primate is a type of mammal that uses its fingers and thumbs to hold things. Mammals are animals that have hair, are warm-blooded, and give birth to live babies. Apes and monkeys are two separate kinds of primates.";
+                        break;
+                    case 5:
+                        document.getElementById("f").style.backgroundImage = "url('animal6.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal6.jpg')";
+                        document.getElementById("b").innerHTML = "Penguin" ;
+                        document.getElementById("inf").innerHTML = "Penguins are birds with black and white feathers and a funny waddle.  But unlike most birds, penguins are not able to fly -- in the air that is.  Penguins spend as much as 75% of their time underwater, searching for food in the ocean.  When they are in the water, they dive and flap their wings.  It looks just like they are flying!";
+                        break;
+                    case 6:
+                        document.getElementById("f").style.backgroundImage = "url('animal7.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal7.jpg')";
+                        document.getElementById("b").innerHTML = "Snake" ;
+                        document.getElementById("inf").innerHTML = "Snakes belong to the animal class reptiles.  This group also includes crocodiles, lizards, and turtles.  Reptiles are cold-blooded animals that raise their body temperature by lying in the sun or lower it by crawling into the shade. ";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">Home</a>
+                <a href="eng.html" onclick="" id="purple">English</a>
+                <a href="scienceen.html" onclick="" id="pink">Science</a>
+                <a href="Islamen.html" onclick="" id="blue">Islam</a>
+                <a href="Converteren.html" onclick="converter()" id="orange">Converter</a>
+                <a href="abouten.html" onclick="about()" id="green">About</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">Copy Right</a>
+            </nav>
+        </div>
+        <div id="bg1" class="bg">
+            <button class="btn" id="btn1" onclick="btnL()">&#10094;</button>
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                    <div id="f" style="background-image: url('animal1.jpg')" class="front"></div>
+                    <div id="b" style="background-image: url('animal1.jpg')" class="back">Lion</div>
+                </div>
+            </label>
+            <div id="inf">Living in the grasslands, scrub, and open woodlands of sub-Saharan Africa, the lion is the second largest cat in the world. It is dwarfed slightly by the tiger, which is closely related and has a very similar body type.</div>
+            <button class="btn"  id="btn2" onclick="btnR()">&#10095;</button>
+            </div>
+    </body>
+</html>

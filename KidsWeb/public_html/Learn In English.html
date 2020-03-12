@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="menustyle.css" />
+        <title>Main Kids Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mainstyle.css" />
+        <link rel="stylesheet" href="Learn Time.css" />
+    </head>
+    <body>
+       <div class="main">
+            <nav>
+                <a href="Main.html" id="red">Home</a>
+                <a href="eng.html" onclick="" id="purple">English</a>
+                <a href="scienceen.html" onclick="" id="pink">Science</a>
+                <a href="Islamen.html" onclick="" id="blue">Islam</a>
+                <a href="Converteren.html" onclick="converter()" id="orange">Converter</a>
+                <a href="abouten.html" onclick="about()" id="green">About</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">Copy Right</a>
+            </nav>
+        </div>
+        <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="s3.jpg" style="width:100% ; height: 300px" >
+                      <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="s4.jpg" style="width:100% ; height: 300px">
+                      <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="s5.jpg" style="width:100% ; height: 300px">
+                      <div class="text">Caption Three</div>
+                    </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                           slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex> slides.length) {slideIndex = 1}    
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    
+                    </script>
+    </body>
+</html>

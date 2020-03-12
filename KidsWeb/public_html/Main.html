@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="mainstyle.css" />
+        <title>Main Kids Web</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">Home</a>
+                <a href="Story.html" onclick="story()" id="purple">Story Time</a>
+                <a href="Lets Sing.html" onclick="sing()" id="pink">Let's Sing</a>
+                <a href="ArabicLoad.html" onclick="learn()" id="blue">Learn In Arabic</a>
+                <a href="Converter.html" onclick="converter()" id="orange">Converter</a>
+                <a href="EnglishLoad.html" onclick="english()" id="violet">Learn In English</a>
+                <a href="abouten.html" onclick="about()" id="green">About</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">CopyRight</a>
+            </nav>
+        </div>
+        
+       <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="s3.jpg" style="width:100% ; height: 300px" >
+                      <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="s4.jpg" style="width:100% ; height: 300px">
+                      <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="s5.jpg" style="width:100% ; height: 300px">
+                      <div class="text">Caption Three</div>
+                    </div>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    
+                    <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                           slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex> slides.length) {slideIndex = 1}    
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    
+                    </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,85 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 26, 2017, 1:34:59 PM
+    Author     : Free
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+
+nav{
+    width: 700px;
+    height: 110px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    border-bottom: 2px solid #fff;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    width: 140px;
+    float: left;
+    color: #fff;
+    padding: 15px;
+    transform: rotate(-45deg);
+    margin-top: 40px;
+    padding-left: 45px;
+    box-shadow: 0 0 5px #000;
+    position: relative;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+#red{
+    background-color: #dc143c;
+    
+}
+#purple{
+    background-color: #8b008b;
+    margin-left: -75px;
+    
+}
+#pink{
+    background-color: #ff1493;
+    margin-left: -75px;
+}
+#blue{
+    background-color: #1e90ff;
+    margin-left: -75px;
+}
+#orange{
+    background-color: #FF5733;
+    margin-left: -75px;
+}
+#violet{
+    background-color: #EE82EE;
+    margin-left: -75px;
+}
+#green{
+    background-color: #228b22;
+    margin-left: -75px;
+}
+#yallow{
+    background-color: #F4FB06;
+    margin-left: -75px;
+}
+
+#red:hover,#purple:hover,#pink:hover,#blue:hover,#orange:hover,#violet:hover,#green:hover,#yallow:hover,
+#red:focus,#purple:focus,#pink:focus,#blue:focus,#orange:focus,#violet:focus,#green:focus,#yallow:focus{
+    background-color: #fafafa;
+    color: #000;
+    text-shadow: none;
+}

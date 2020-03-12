@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="Animals.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+             i=0;
+            function btnR(){
+                i++;
+                if(i===7)
+                    i=0;
+                setTimeout(info,0);
+            }
+            function btnL(){
+                i--;
+                if(i===-1)
+                    i=6;
+                setTimeout(info,0);
+            }
+            function info()
+            {
+                switch (i) {
+                    
+                    case 0:
+                        document.getElementById("f").style.backgroundImage = "url('animal1.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal1.jpg')";
+                        document.getElementById("b").innerHTML = "أسد" ;
+                        document.getElementById("inf").innerHTML = "إنّ الأسد هو حيوان اجتماعي يُعد ثاني أكبر أنواع فصيلة القطط بعد النمر السيبيري، وهو أكبر أنواع القطط الموجودة في أفريقيا، وهو يتميز بحبه للعيش في سلالات تتكون من ذكر الأسد، واللبؤات، والأشبال، ويُطلق عليه اسم (ملك الغابة)، إضافة إلى: حيدر، وليث، وسبع، وضرغام، وأسامة، وأبو لبدة، وغضنفر، وحارث، ويُعتبر الأسد حيواناً وطنياً في كلّ من الدول: بلغاريا، وألبانيا، وبلجيكا، وإثيوبيا، وإنجلترا، وهولندا، وسنغافورة." ;
+                        break;
+                    case 1:
+                        document.getElementById("f").style.backgroundImage = "url('animal2.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal2.jpg')";
+                        document.getElementById("b").innerHTML = "فيل" ;
+                        document.getElementById("inf").innerHTML = "الفيل هو حيوان ثديّ ضخم، وهو من أكبر الحيوانات البريّة على وجه الأرض، وبالرغم من ضخامته إلا أنّه كائن لطيف وهادئ ومسالم، ويعبّر عن مشاعره بشكل واضح، فيمكن ملاحظة حزنه أو فرحه فيوجد في دماغة مركز مسؤول عن العاطفة كما الإنسان، كما أنّه يتشابه معه بأنّ صغير الفيل يولد بدون أسنان، ثم تنمو تدريجياً بنمو الفيل، مع ذلك فهو قويّ، كما أنهّ شديد الذكاء، ويقدّر وزن مخّه بخمسة كيلو غرامات.";
+                        break;
+                    case 2:
+                        document.getElementById("f").style.backgroundImage = "url('animal3.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal3.jpg')";
+                        document.getElementById("b").innerHTML = "زرافة" ;
+                        document.getElementById("inf").innerHTML = "الزرافة هي نوع من أنواع الحيوانات التي تنتمي إلى الثديّات موطنها الأصلي في إفريقيا جنوباً، والتشاد شمالاً، والصومال، والنيجر، وتعيش عادة بالقرب من الأحراج المكشوفة والغابات والأماكن التي توجد بها الكثير من الأشجار والأعشاب التي تتغذى عليها، وهي أطول أنواع الحيوانات حيث يبلغ طولها من خمس إلى ست أمتار، والذكور عادة ارتفاعها أكثر من الإناث، وتمتلك رقبة طويلة يبلغ طولها حوالي ستّ أقدام وتحتوي رقبتها على عضلات قويّة ذات رباط فقريّ مثبّت بواسطة فقرات ظهريّة تشبه الجملة قليلاً في شكلها.";
+                        break;
+                    case 3:
+                        document.getElementById("f").style.backgroundImage = "url('animal4.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal4.jpg')";
+                        document.getElementById("b").innerHTML = "غزال" ;
+                        document.getElementById("inf").innerHTML = "الغزال من الحيوانات الثدية التي تتكاثر بالولادة، وهو معروف من الزمان القديم بشكله الانسيابيّ وصفاته الوديعة وطباعه الهادئة، ولكنه تعرّض للكثير من الصيد مما جعله مهدداً بالانقراض في بعض المناطق، وانقرض فعلاً في مناطق أخرى مثل مناطقنا العربية. والغزال من الحيوانات التي تغنى الشعراء بجمالها ورشاقتها لذلك الغزال غالباً ما يترافق مع الجمال عندما يريدون وصف شخصٍ به.";
+                        break;
+                    case 4:
+                        document.getElementById("f").style.backgroundImage = "url('animal5.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal5.jpg')";
+                        document.getElementById("b").innerHTML = "قرد" ;
+                        document.getElementById("inf").innerHTML = "القرد حيوان ثديٌ يُصنَّف من رُتبة الرئيسيات، وهي من أرقى التصنيفات في عالم الحيوان، وله أكثر من مئتي نوعٍ منتشرٍ حول العالم، وتعيش ضمن مجموعاتٍ في روابطَ عائلية يُديرها قائدٌ للقطيع يُنصِّبه أفراد القطيع عليهم ضمن منافسةٍ شرسة وقوية بين الذكور الأقوياء في القطيع. لقد اعتبر المصريون القدماء القرد رمزاً مقدساً للآلهة السفلية في عصر الفراعنة، ولقد وُجدتْ تماثيلٌ ومومياوات للقرود في العديد من المقابر الملكية الفرعونية.";
+                        break;
+                    case 5:
+                        document.getElementById("f").style.backgroundImage = "url('animal6.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal6.jpg')";
+                        document.getElementById("b").innerHTML = "بطريق" ;
+                        document.getElementById("inf").innerHTML = "حيوان البطريق هو من أنواع الطيور البحرية المعروفة بانعدام قدرتها على الطيران والتي تتميّز بقدرتها على التكيّف العالي مع الحياة المائية؛ ولعل السبب في ذلك يعود إلى تركيب جسدها الذي يساعدها على التمويه، حيث تتحوّل أجنحتها إلى زعانف حتى تساعدها على السباحة، وتجدر الإشارة إلى أنّ مُعظم أنواع البطاريق تتغذى بشكلٍ أساسي على كلٍ من الكريل، والحبار،";
+                        break;
+                    case 6:
+                        document.getElementById("f").style.backgroundImage = "url('animal7.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('animal7.jpg')";
+                        document.getElementById("b").innerHTML = "أفعى" ;
+                        document.getElementById("inf").innerHTML = "تصنف الأفعى من الزّواحف ذات الدم البارد، لها جسم طويل، ومغطى بالحراشف، ولا توجد لديها أطراف، ولا أذنان خارجتان، ولكن لها حواف في جسمها، ويبلغ عدد الثعابين الآكلة للحوم حوالي 2700 نوع، وتنتشر في العديد من القارات، باستثناء قارة أنتاركتيكا، ولها أطوال مختلفة، فهناك الأفاعي الصغيرة والتي تبلغ 10 سم، وهناك الأفاعي الكبيرة، مثل الأصلة، والأناكوندا، ويصل طولها إلى 6.95 أمتار.";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">الصفحة الرئيسية</a>
+                <a href="Arabic.html" onclick="" id="purple">اللغة العربية</a>
+                <a href="science.html" onclick="" id="pink">العلوم</a>
+                <a href="Islam.html" onclick="" id="blue">الئقافة الاسلامية</a>
+                <a href="Converterar.html" onclick="converter()" id="orange">تحويل الوحدات</a>
+                <a href="aboutar.html" onclick="about()" id="green">عن الموقع</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">حقوق الملكية</a>
+            </nav>
+        </div>
+        <div id="bg1" class="bg">
+            <button class="btn" id="btn1" onclick="btnL()">&#10094;</button>
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                    <div id="f" style="background-image: url('animal1.jpg')" class="front"></div>
+                    <div id="b" style="background-image: url('animal1.jpg')" class="back">أسد</div>
+                </div>
+            </label>
+            <div id="inf">إنّ الأسد هو حيوان اجتماعي يُعد ثاني أكبر أنواع فصيلة القطط بعد النمر السيبيري، وهو أكبر أنواع القطط الموجودة في أفريقيا، وهو يتميز بحبه للعيش في سلالات تتكون من ذكر الأسد، واللبؤات، والأشبال، ويُطلق عليه اسم (ملك الغابة)، إضافة إلى: حيدر، وليث، وسبع، وضرغام، وأسامة، وأبو لبدة، وغضنفر، وحارث، ويُعتبر الأسد حيواناً وطنياً في كلّ من الدول: بلغاريا، وألبانيا، وبلجيكا، وإثيوبيا، وإنجلترا، وهولندا، وسنغافورة.</div>
+            <button class="btn"  id="btn2" onclick="btnR()">&#10095;</button>
+            </div>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="sss.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <script>
+             i=0;
+            function btnR(){
+                i++;
+                if(i===8)
+                    i=0;
+                setTimeout(info,0);
+            }
+            function btnL(){
+                i--;
+                if(i===-1)
+                    i=7;
+                setTimeout(info,0);
+            }
+            function info()
+            {
+                switch (i) {
+                    
+                    case 0:
+                        document.getElementById("f").style.backgroundImage = "url('a.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a.gif')";
+                        break;
+                    case 1:
+                        document.getElementById("f").style.backgroundImage = "url('a1.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a1.gif')";
+                        break;
+                    case 2:
+                        document.getElementById("f").style.backgroundImage = "url('a2.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a2.gif')";
+                        break;
+                    case 3:
+                        document.getElementById("f").style.backgroundImage = "url('a3.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a3.gif')";
+                        break;
+                    case 4:
+                        document.getElementById("f").style.backgroundImage = "url('a4.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a4.gif')";
+                        break;
+                    case 5:
+                        document.getElementById("f").style.backgroundImage = "url('a5.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a5.gif')";
+                        break;
+                    case 6:
+                        document.getElementById("f").style.backgroundImage = "url('a6.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a6.gif')";
+                        break;
+                    case 7:
+                        document.getElementById("f").style.backgroundImage = "url('a7.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a7.gif')";
+                    break;
+                    case 8:
+                        document.getElementById("f").style.backgroundImage = "url('a8.gif')";
+                        document.getElementById("b").style.backgroundImage = "url('a8.gif')";
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">Home</a>
+                <a href="eng.html" onclick="" id="purple">English</a>
+                <a href="scienceen.html" onclick="" id="pink">Science</a>
+                <a href="Islamen.html" onclick="" id="blue">Islam</a>
+                <a href="Converteren.html" onclick="converter()" id="orange">Converter</a>
+                <a href="abouten.html" onclick="about()" id="green">About</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">Copy Right</a>
+            </nav>
+        </div>
+        <div id="bg1" class="bg">
+            <button class="btn" id="btn1" onclick="btnL()">&#10094;</button>
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                    <div id="f" style="background-image: url('a.gif')" class="front"></div>
+                    <div id="b" style="background-image: url('a.gif')" class="back"></div>
+                </div>
+            </label>
+            <button class="btn"  id="btn2" onclick="btnR()">&#10095;</button>
+            </div>
+    </body>
+</html>

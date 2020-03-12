@@ -1,0 +1,148 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 6, 2017, 11:40:52 AM
+    Author     : Free
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    position: relative;
+    height: 400px;
+    animation: animate infinite 20s;
+    
+}
+@keyframes animate
+{
+    0%{
+        background: #F44336;
+    }
+    20%{
+        background: #E91E63;
+    }
+    40%{
+        background: #9C27B0;
+    }
+    60%{
+        background: #2196F3;
+    }
+    80%{
+        background: #00BCD4;
+    }
+    100%{
+        background: #8BC34A;
+    }
+    
+}
+.btn{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    top: 50%;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+#btn2{
+    position: relative;
+    float: right;
+}
+
+.w3-btn {
+    top: 50%;
+    left: 50%;
+    width:150px;}
+
+
+
+label {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+    z-index: 20;
+}
+
+    .card div {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #FFF;
+        text-align: center;
+        line-height: 200px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 2px;
+        background-size: 400px 300px;
+        background-repeat: no-repeat;
+        color: black;
+    }
+
+    .card .back {
+        opacity: .7;
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        color: black;
+        font-size: 60px;
+    }
+
+label:hover .card {
+    -webkit-transform: rotateX(20deg);
+    transform: rotateX(20deg);
+    box-shadow: 0 20px 20px rgba(50,50,50,.2);
+}
+
+input {
+    display: none;
+}
+
+:checked + .card {
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+}
+
+label:hover :checked + .card {
+    transform: rotateX(160deg);
+    -webkit-transform: rotateX(160deg);
+    box-shadow: 0 20px 20px rgba(255,255,255,.2);
+}
+
+#inf{
+    display: block;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-size: 20px;
+    text-align: right;
+}

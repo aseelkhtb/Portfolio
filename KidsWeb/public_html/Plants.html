@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="menustyle.css" />
+        <link rel="stylesheet" href="Animals.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+             i=0;
+            function btnR(){
+                i++;
+                if(i===7)
+                    i=0;
+                setTimeout(info,0);
+            }
+            function btnL(){
+                i--;
+                if(i===-1)
+                    i=6;
+                setTimeout(info,0);
+            }
+            function info()
+            {
+                switch (i) {
+                    
+                    case 0:
+                        document.getElementById("f").style.backgroundImage = "url('plant1.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant1.jpg')";
+                        document.getElementById("b").innerHTML = "تفاح" ;
+                        document.getElementById("inf").innerHTML = "يعتبر التفّاح من أقدم أنواع الفاكهة، فقد تمّ اكتشافه في عصور ما قبل الميلاد؛ حيث اكتشف في تركيّا ومنها انتشر لجميع أصقاع العالم، وهو من أكثر الفاكهة انتشاراً واستهلاكاً فهو يؤكل صيفاً وشتاءً. للتفّاح أشكال مختلفة وألوان عدّة؛ كالأحمر، والأصفر، والأخضر، والأخير ذو قيمةٍ غذائيّة عالية وفوائد عظيمة.";
+                        break;
+                    case 1:
+                        document.getElementById("f").style.backgroundImage = "url('plant2.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant2.jpg')";
+                        document.getElementById("b").innerHTML = "موز" ;
+                        document.getElementById("inf").innerHTML = "يعتبر الموز أحد أكثر أنواع الفواكه استهلاكاً، وهو من أقدم المحاصيل المزروعة في العالم، ويوجد العديد من أنواع الموز التي تنتمي إلى النبات العشبي من جنس (Musa)، وللموز الكثير من الفوائد الصحية، فهو يعتبر مصدراً للعديد من الفيتامينات والمعادن والمركّبات الفعّالة التي لها على جسم الإنسان الكثير من التأثيرات الصحّية، هذا بالإضافة إلى طعمه اللذيذ وسهولة تناوله اللذين يشجعان على كثرة استهلاكه، كما أنّه يعتبر إضافةً لذيذة للكثير من الأطباق والمشروبات";
+                        break;
+                    case 2:
+                        document.getElementById("f").style.backgroundImage = "url('plant3.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant3.jpg')";
+                        document.getElementById("b").innerHTML = "برتقال" ;
+                        document.getElementById("inf").innerHTML = "يُعدّ البرتقال من ثمار الحمضيات، وهو فاكهة منعشة ولذيدة وغنية بالفيتامينات والمعادن الضرورية للجسم، ومتوفرة على مدار العام، وتعدّ البرازيل حالياً من أكبر الدول المنتجة له في العالم، تليها ولايتا فلوريدا وكاليفورنيا في الولايات المتحدة الأمريكية، وبدأت زراعة البرتقال في دول جنوب شرق آسيا، ومنها انتقلت إلى العرب، ثمّ إلى أوروبا عبر البحارة البرتغاليين.";
+                        break;
+                    case 3:
+                        document.getElementById("f").style.backgroundImage = "url('plant4.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant4.jpg')";
+                        document.getElementById("b").innerHTML = "مانجا" ;
+                        document.getElementById("inf").innerHTML = "تعتبر واحدةً من أنواع الفواكهة ذات الطعم الحلو، وتزرع في المناطق الاستوائيّة والشبة استوائيّة، الهند، وباكستان، والفلبين، وبنغلادش، ويصل طول الشجرة الواحدة منها ما بين 35 إلى 40 متر تقريباً، وتمتدّ جذورها في الأرض إلى نحو ستة أمتار لتكون واحدةً من الأشجار المعمرة، والثمر منها يختلف عن بعضها البعض بالحجم واللون، وتوجد بألون الأصفر، والبرتقاليّ، والأحمر، والأخضر، و لهذه الثمار فوائد كبيرة.";
+                        break;
+                    case 4:
+                        document.getElementById("f").style.backgroundImage = "url('plant5.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant5.jpg')";
+                        document.getElementById("b").innerHTML = "خوخ" ;
+                        document.getElementById("inf").innerHTML = "الخوخ أو البرقوق شجرة من شجر ذات النواة، يتبع جنس الخوخ، تنمو شجرة الخوخ في المناطق المعتدلة في فصل الربيع، وهي من الأشجار التي تتبع الفصيلة الوردية، أزهارها بيضاء اللون وثمارها مختلفة الألوان، قد تكون وردية اللون أو حمراء.";
+                        break;
+                    case 5:
+                        document.getElementById("f").style.backgroundImage = "url('plant6.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant6.jpg')";
+                        document.getElementById("b").innerHTML = "مشمش" ;
+                        document.getElementById("inf").innerHTML = "";
+                        break;
+                    case 6:
+                        document.getElementById("f").style.backgroundImage = "url('plant7.jpg')";
+                        document.getElementById("b").style.backgroundImage = "url('plant7.jpg')";
+                        document.getElementById("b").innerHTML = "فرولة" ;
+                        document.getElementById("inf").innerHTML = "توصي التوجيهات التغذوية بزيادة تناول الفواكه والخضروات لجعل الحمية الغذائية أكثر صحة، ولما لها من فوائد وقائية وعلاجية في كل من السمنة والأمراض المزمنة المتعلقة بها مثل أمراض القلب والأوعية الدموية والسكري والسرطان، وذلك لما تحتويه هذه الأغذية من الألياف الغذائية والفيتامينات والمعادن والعديد من مركبات الفيتوكيميكال النباتية (phytochemicals) المفيدة للصحة.";
+                        break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <a href="Main.html" id="red">الصفحة الرئيسية</a>
+                <a href="Arabic.html" onclick="" id="purple">اللغة العربية</a>
+                <a href="science.html" onclick="" id="pink">العلوم</a>
+                <a href="Islam.html" onclick="" id="blue">الئقافة الاسلامية</a>
+                <a href="Converterar.html" onclick="converter()" id="orange">تحويل الوحدات</a>
+                <a href="aboutar.html" onclick="about()" id="green">عن الموقع</a>
+                <a href="Copy Right.html" onclick="cright()" id="yallow">حقوق الملكية</a>
+            </nav>
+        </div>
+        <div id="bg1" class="bg">
+            <button class="btn" id="btn1" onclick="btnL()">&#10094;</button>
+            <label>
+                <input type="checkbox"  />
+                <div class="card">
+                    <div id="f" style="background-image: url('plant1.jpg')" class="front"></div>
+                    <div id="b" style="background-image: url('plant1.jpg')" class="back">تفاح</div>
+                </div>
+            </label>
+            <div id="inf">يعتبر التفّاح من أقدم أنواع الفاكهة، فقد تمّ اكتشافه في عصور ما قبل الميلاد؛ حيث اكتشف في تركيّا ومنها انتشر لجميع أصقاع العالم، وهو من أكثر الفاكهة انتشاراً واستهلاكاً فهو يؤكل صيفاً وشتاءً. للتفّاح أشكال مختلفة وألوان عدّة؛ كالأحمر، والأصفر، والأخضر، والأخير ذو قيمةٍ غذائيّة عالية وفوائد عظيمة.</div>
+            <button class="btn"  id="btn2" onclick="btnR()">&#10095;</button>
+            </div>
+    </body>
+</html>
